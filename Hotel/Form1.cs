@@ -36,7 +36,7 @@ namespace Hotel
         private void UpdateTotalLabel()
         {
             // Get the quantity from the NumericUpDown control
-            int quantity = Decimal.ToInt32(updquantity.Value);
+            int quantity = Decimal.ToInt32(updpax.Value);
         }
         private void CalculateDue()
 
@@ -169,7 +169,7 @@ namespace Hotel
             String name = tbname.Text;
             string contactno = tbcont.Text;
             int age = (int)updage.Value;
-            int quantity = (int)updquantity.Value;
+            int pax = (int)updpax.Value;
             string discount = lbldisc.Text;
             string due = lbldue.Text.Replace("₱", "");
             string totalamount = lblamount.Text;
@@ -237,9 +237,32 @@ namespace Hotel
                                         string checkedTypeButtonName = GetCheckedTypeButtonName();
                                         double sukli = payment - amountDue;
 
-                                        string message = $"Name : {name}\nYour Contact Number : {contactno}\nYour age : {age}\nAccomodation : {checkedTypeButtonName}\nPax : {quantity}\nDiscount Type : {checkedDiscButtonName}\n------------\nTotal Amount : {totalamount}\nDiscount : {discount}\nAmount Due : ₱{due}\nPayment : ₱{payment:F2}\n-------------\nChange : {sukli:F2} ";
+                                        string message = $"Name : {name}\nYour Contact Number : {contactno}\nYour age : {age}\nAccomodation : {checkedTypeButtonName}\nPax : {pax}\nDiscount Type : {checkedDiscButtonName}\n------------\nTotal Amount : {totalamount}\nDiscount : {discount}\nAmount Due : ₱{due}\nPayment : ₱{payment:F2}\n-------------\nChange : {sukli:F2} ";
 
                                         MessageBox.Show(message, "BILLING INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        tbname.Clear();
+                                        tbcont.Clear();
+                      
+                                        lbldisc.Text = "";
+                                        lblamount.Text = "";
+                                        tbpayment.Clear();
+
+                                        rbreg.Checked = false;
+                                        rbstudent.Checked = false;
+                                        rbpwd.Checked = false;
+                                        rbsenior.Checked = false;
+
+                                        rbDeluxe.Checked = false;   
+                                        rbEcon.Checked = false;
+                                        rbExe.Checked = false;
+                                        rbStandard.Checked = false;
+
+                                        updage.Value = 18;
+                                        updpax.Value = 2;
+
+
+
+
                                     }
 
 

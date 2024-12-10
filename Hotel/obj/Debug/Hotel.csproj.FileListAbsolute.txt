@@ -28,3 +28,13 @@ C:\Nuque_BSCS3A-Hotel\Hotel\obj\Debug\Hotel.csproj.GenerateResource.cache
 C:\Nuque_BSCS3A-Hotel\Hotel\obj\Debug\Hotel.csproj.CoreCompileInputs.cache
 C:\Nuque_BSCS3A-Hotel\Hotel\obj\Debug\Hotel.exe
 C:\Nuque_BSCS3A-Hotel\Hotel\obj\Debug\Hotel.pdb
+C:\Hotel Reservation\Hotel\bin\Debug\Hotel.exe.config
+C:\Hotel Reservation\Hotel\bin\Debug\Hotel.exe
+C:\Hotel Reservation\Hotel\bin\Debug\Hotel.pdb
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.csproj.AssemblyReference.cache
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.sige.resources
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.Properties.Resources.resources
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.csproj.GenerateResource.cache
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.csproj.CoreCompileInputs.cache
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.exe
+C:\Hotel Reservation\Hotel\obj\Debug\Hotel.pdb

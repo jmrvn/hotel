@@ -39,7 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.updage = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.updquantity = new System.Windows.Forms.NumericUpDown();
+            this.updpax = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.updage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updquantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updpax)).BeginInit();
             this.gbtype.SuspendLayout();
             this.gbdisc.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -179,24 +179,24 @@
             this.label5.Text = "PAX :";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // updquantity
+            // updpax
             // 
-            this.updquantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updquantity.Location = new System.Drawing.Point(219, 181);
-            this.updquantity.Maximum = new decimal(new int[] {
+            this.updpax.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updpax.Location = new System.Drawing.Point(219, 181);
+            this.updpax.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.updquantity.Minimum = new decimal(new int[] {
+            this.updpax.Minimum = new decimal(new int[] {
             2,
             0,
             0,
             0});
-            this.updquantity.Name = "updquantity";
-            this.updquantity.Size = new System.Drawing.Size(120, 29);
-            this.updquantity.TabIndex = 9;
-            this.updquantity.Value = new decimal(new int[] {
+            this.updpax.Name = "updpax";
+            this.updpax.Size = new System.Drawing.Size(120, 29);
+            this.updpax.TabIndex = 9;
+            this.updpax.Value = new decimal(new int[] {
             2,
             0,
             0,
@@ -458,7 +458,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.updquantity);
+            this.groupBox2.Controls.Add(this.updpax);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.updage);
             this.groupBox2.Controls.Add(this.label4);
@@ -494,7 +494,7 @@
             this.Text = "Hotel ni Chaeyoung";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.updage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.updquantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updpax)).EndInit();
             this.gbtype.ResumeLayout(false);
             this.gbtype.PerformLayout();
             this.gbdisc.ResumeLayout(false);
@@ -520,7 +520,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown updage;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown updquantity;
+        private System.Windows.Forms.NumericUpDown updpax;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
