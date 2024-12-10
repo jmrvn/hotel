@@ -31,7 +31,21 @@ namespace Hotel
             CalculateDue();
             UpdateTotalLabel();
 
+            tbpayment.KeyDown += new KeyEventHandler(Control_KeyDown);
+
+
         }
+
+        private void Control_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Check if the Enter key is pressed
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Trigger the button1_Click method manually
+                button1_Click(sender, e);
+            }
+        }
+
 
         private void UpdateTotalLabel()
         {
@@ -185,7 +199,12 @@ namespace Hotel
 
 
 
-
+            if (string.IsNullOrWhiteSpace(contactnoval) || contactnoval.Length != 11 || !contactnoval.All(char.IsDigit))
+            {
+                MessageBox.Show("Contact number must have exactly 11 digits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbcont.Clear();
+                return;  
+            }
 
             if (string.IsNullOrWhiteSpace(contactnoval))
             {
